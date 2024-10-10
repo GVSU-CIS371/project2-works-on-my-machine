@@ -2,15 +2,19 @@ import { Product, products } from "./data";
 
 function generateProductHTML(product: Product): string {
     return `<div class="store-item">
-              <img src="${product.image}" alt="${product.name}" />
-              <p>${product.name}</p>
-              <p>${product.description}</p>
-              <span>${product.rating}/5</span><span>$${product.price}</span><span>stock ${product.stock}</span>
+                <img src="${product.image}" alt="${product.name}" />
+                <p>${product.name}</p>
+                <p>${product.description}</p>
+                <span>${product.rating}/5</span><span>$${product.price}</span><span>stock ${product.stock}</span>
             </div>`;
 }
 
 function renderProducts(prods: Product[]): void {
-    // your code
+    const container = document.getElementById("main-container");
+    prods.map((product) => {
+        if (!container) return;
+        container.innerHTML += generateProductHTML(product);
+    });
 }
 
 function getByCategory(category: string): void {
