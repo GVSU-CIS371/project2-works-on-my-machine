@@ -22,7 +22,10 @@ function renderProducts(prods: Product[]): void {
 }
 
 function getByCategory(category: string): void {
-  // your code
+  let filteredProducts = products.filter(
+    (product) => product.category === category
+  );
+  renderProducts(filteredProducts);
 }
 
 function getByRating(minRating: number): void {
