@@ -23,8 +23,7 @@ const products: Product[] = [
         rating: 4,
         stock: 5,
         //a fake image
-        image:
-            "https://m.media-amazon.com/images/I/31TcnQiBTpL._AC_UF894,1000_QL80_.jpg",
+        image: "https://m.media-amazon.com/images/I/31TcnQiBTpL._AC_UF894,1000_QL80_.jpg",
         category: "Electronics",
     },
     // More Electronics
@@ -46,8 +45,7 @@ const products: Product[] = [
         price: 12,
         rating: 4,
         stock: 20,
-        image:
-            "https://d1b5h9psu9yexj.cloudfront.net/45024/Spigen-PowerArc-ArcStation-Pro_20210512-160334_full.jpeg",
+        image: "https://d1b5h9psu9yexj.cloudfront.net/45024/Spigen-PowerArc-ArcStation-Pro_20210512-160334_full.jpeg",
         category: "Electronics",
     },
 
@@ -59,8 +57,7 @@ const products: Product[] = [
         price: 20,
         rating: 4,
         stock: 25,
-        image:
-            "https://imgs.michaels.com/MAM/assets/1/5E3C12034D34434F8A9BAAFDDF0F8E1B/img/091B833490D74F4C87D5CE3767E806C7/MP236558_11.jpg",
+        image: "https://imgs.michaels.com/MAM/assets/1/5E3C12034D34434F8A9BAAFDDF0F8E1B/img/091B833490D74F4C87D5CE3767E806C7/MP236558_11.jpg",
         category: "Clothing",
     },
     {
@@ -70,8 +67,7 @@ const products: Product[] = [
         price: 45,
         rating: 3,
         stock: 15,
-        image:
-            "https://benzakdenimdevelopers.com/cdn/shop/products/BDD-006-loomstate-denim-15-oz-RHT-0_720x.jpg?v=1664551915",
+        image: "https://benzakdenimdevelopers.com/cdn/shop/products/BDD-006-loomstate-denim-15-oz-RHT-0_720x.jpg?v=1664551915",
         category: "Clothing",
     },
     // ... Add more clothing items ...
@@ -82,8 +78,7 @@ const products: Product[] = [
         price: 15,
         rating: 4.8,
         stock: 7,
-        image:
-            "https://goldiesocks.com/cdn/shop/products/mens-sock-argyle-blue-goldie-socks_540x.jpg?v=1541354007",
+        image: "https://goldiesocks.com/cdn/shop/products/mens-sock-argyle-blue-goldie-socks_540x.jpg?v=1541354007",
         category: "Clothing",
     },
 
@@ -115,8 +110,7 @@ const products: Product[] = [
         price: 4,
         rating: 3,
         stock: 56,
-        image:
-            "https://www.farmfreshnuts.com/wp-content/uploads/2018/02/Cashews-DRS.jpg",
+        image: "https://www.farmfreshnuts.com/wp-content/uploads/2018/02/Cashews-DRS.jpg",
         category: "Groceries",
     },
 ];
