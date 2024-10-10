@@ -30,7 +30,7 @@ function getByCategory(category: string): void {
 
 function getByRating(minRating: number): void {
   let filteredRatings = products.filter(
-    (product) => product.rating === minRating
+    (product) => product.rating > minRating
   );
   renderProducts(filteredRatings);
 }
