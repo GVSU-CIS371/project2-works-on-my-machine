@@ -1,7 +1,7 @@
 import { Product, products } from "./data";
 
 function generateProductHTML(product: Product): string {
-    return `<div class="store-item">
+  return `<div class="store-item">
                 <img src="${product.image}" alt="${product.name}" />
                 <p>${product.name}</p>
                 <p>${product.description}</p>
@@ -10,19 +10,26 @@ function generateProductHTML(product: Product): string {
 }
 
 function renderProducts(prods: Product[]): void {
-    const container = document.getElementById("main-container");
-    prods.map((product) => {
-        if (!container) return;
-        container.innerHTML += generateProductHTML(product);
-    });
+  const container = document.getElementById("main-container");
+  if (container) {
+    container.innerHTML = "";
+  } else {
+    return;
+  }
+  prods.map((product) => {
+    container.innerHTML += generateProductHTML(product);
+  });
 }
 
 function getByCategory(category: string): void {
-    // your code
+  let filteredProducts = products.filter(
+    (product) => product.category === category
+  );
+  renderProducts(filteredProducts);
 }
 
 function getByRating(minRating: number): void {
-    // your code
+  // your code
 }
 
 export { renderProducts, getByCategory, getByRating };
